@@ -111,12 +111,13 @@ export default function MovieCards() {
             className="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition duration-300 relative"
           >
             <div className="relative h-[450px]">
-              <Image 
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
-                alt={movie.title} 
-                fill 
-                className="object-cover"
-              />
+            <Image 
+  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
+  alt={movie.title} 
+  fill 
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  className="object-cover"
+/>
               {/* Movie Details Button */}
               <button 
                 onClick={() => openMovieDetails(movie)}
@@ -154,13 +155,15 @@ export default function MovieCards() {
             </button>
             <div className="grid md:grid-cols-2 gap-6 p-6">
               <div>
-                <Image 
-                  src={`https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`} 
-                  alt={selectedMovie.title}
-                  width={500}
-                  height={750}
-                  className="rounded-lg"
-                />
+              <Image 
+  src={`https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`} 
+  alt={selectedMovie.title}
+  width={500}
+  height={750}
+  className="rounded-lg"
+  sizes="(max-width: 500px) 100vw, 500px"
+/>
+
               </div>
               <div>
                 <h2 className="text-2xl font-bold mb-4">{selectedMovie.title}</h2>
