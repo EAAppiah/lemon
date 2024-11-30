@@ -3,7 +3,7 @@ import { FaSearch  } from 'react-icons/fa';
 
 export default function HeroSection() {
   return (
-    <div className="relative h-[45vh] w-full overflow-hidden">
+    <div className="relative h-[60vh] md:h-[50vh] w-full overflow-hidden">
       {/* Background Image */}
       <Image 
         src="/images/avs.jpg"
@@ -14,11 +14,11 @@ export default function HeroSection() {
 
       {/* Overlay Content */}
       <div className="relative z-10 container mx-auto px-4 flex flex-col justify-center h-full text-center text-white">
-        <h1 className="text-5xl font-bold mb-6 drop-shadow-lg">
+        <h1 className="text-3xl md:text-5xl font-bold mb-6 drop-shadow-lg">
           Explore Cinematic Worlds
         </h1>
         
-        <p className="text-xl mb-10 max-w-2xl mx-auto drop-shadow-md">
+        <p className="text-lg md:text-xl  mb-10 max-w-2xl mx-auto drop-shadow-md">
           Discover thousands of movies, from timeless classics to the latest blockbusters.
         </p>
         

@@ -1,6 +1,6 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import MovieCards from '@/components/MovieCards';
+import Navbar from '../components/Navbar.jsx';
+import Hero from '../components/Hero';
+import MovieCards from '../components/MovieCards';
 
 
 export default function Home() {
