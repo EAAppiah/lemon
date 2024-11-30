@@ -1,5 +1,5 @@
 import Link from "next/link"; 
-import Image from "next/image";  
+import Image from "next/image";
 
 export default function Navbar() {   
   return (     
@@ -12,16 +12,10 @@ export default function Navbar() {
         </Link>
         
         {/* Navigation Links */}
-        <div className="flex space-x-6 items-center">           
+        <div>
           <Link href="#" className="text-gray-700 hover:text-blue-600 transition">
-            <span className="hidden md:inline">Home</span>           
-          </Link>           
-          <Link href="#" className="text-gray-700 hover:text-blue-600 transition">
-            <span className="hidden md:inline">Profile</span>           
-          </Link>           
-          <Link href="#" className="text-gray-700 hover:text-blue-600 transition">
-            <span className="hidden md:inline">Settings</span>           
-          </Link>         
+            <span className="hidden md:inline">Login</span>
+          </Link>                    
         </div>       
       </div>     
     </nav>   

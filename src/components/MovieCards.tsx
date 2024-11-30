@@ -148,9 +148,9 @@ export default function MovieCards() {
           <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto relative">
             <button 
               onClick={closeMovieDetails}
-              className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+              className="absolute text-xl font-bold top-2 right-2 text-red-600 hover:text-gray-900"
             >
-              Close
+              X
             </button>
             <div className="grid md:grid-cols-2 gap-6 p-6">
               <div>
