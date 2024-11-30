@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar.jsx';
+import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import MovieCards from '../components/MovieCards';
 
