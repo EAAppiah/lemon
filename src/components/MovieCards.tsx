@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FaRegStar, FaClock, FaInfo } from 'react-icons/fa6';
-import { getTrendingMovies, getMovieDetails, Movie } from '../library/tmdb.ts';
+import { getTrendingMovies, getMovieDetails, Movie } from '../library/tmdb';
 
 // Extended movie interface to include additional details
 interface DetailedMovie extends Movie {
